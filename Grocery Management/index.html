@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="r">
+        <div class="logo1"> 
+           
+           <h3><a id="a11" href="main.html"><i class="fa-solid fa-arrow-left"></i> Go Back</a></h3>
+        </div>
+        <div class="logo">
+            <h1>Stock-Sage</h1>
+            
+        </div>
+    </div>
+    <main>
+        <div class="con2">
+        <section class="product-section">
+            <h2 style="padding-bottom:5px ;">All Items</h2>
+            
+            <div class="product-grid">
+                <!-- Product List -->
+                <div class="product-card" onclick="addToCart('peanut Butter', 460)">
+                    <img src="image2/img1.jpg" alt="peanut Butter">
+                    <h3>peanut Butter</h3>
+                    <p>₹ 460.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" onclick="addToCart('Honey', 346)">
+                    <img src="image2/img2.jpg" alt="Honey">
+                    <h3>Honey</h3>
+                    <p>₹ 346.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" onclick="addToCart('Cadbury', 80)">
+                    <img src="image2/img3.jpg" alt="Cadbury">
+                    <h3>Cadbury</h3>
+                    <p>₹ 80.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" onclick="addToCart('Gulab Jamun', 100)">
+                    <img src="image2/img4.jpg" alt="Gulab Jamun">
+                    <h3>Gulab Jamun</h3>
+                    <p>₹ 100.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" onclick="addToCart('Maggi', 40)">
+                    <img src="image2/img5.webp" alt="Maggi">
+                    <h3>Maggi</h3>
+                    <p>₹ 40.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" onclick="addToCart('Tata Tea', 200)">
+                    <img src="image2/img6.jpg" alt="Tata Tea">
+                    <h3>Tata Tea</h3>
+                    <p>₹ 200.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" onclick="addToCart('Dettol', 50)">
+                    <img src="image2/img7.webp" alt="Dettol">
+                    <h3>Dettol</h3>
+                    <p>₹ 50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" onclick="addToCart('Oreo', 30)">
+                    <img src="image2/img8.webp" alt="Oreo">
+                    <h3>Oreo</h3>
+                    <p>₹ 30.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" onclick="addToCart('Chips', 40)">
+                    <img src="image2/img9.webp" alt="Chips">
+                    <h3>chips</h3>
+                    <p>₹ 40.00</p>
+                    <button>Add to Cart</button>
+                </div>
+              
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+               
+            </ul>
+            <p>Total Items: <span id="total-items">0</span></p>
+            <p>Total Price: ₹ <span id="total-price">0</span></p>
+            <button id="checkout-btn" onclick="checkout()">Checkout</button>
+        </section>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock-Sage : The Grocery management </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="main.css" />
+
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container1">
+      <header>
+        <nav class="navbar">
+          <span class="hamburger-btn material-symbols-rounded">menu</span>
+          <a href="#" class="logo">
+            <img src="images/logo.jpg" alt="logo" />
+            <h2>Stock-Sage</h2>
+          </a>
+          <ul class="links">
+            <span class="close-btn material-symbols-rounded">close</span>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="index.html">Bill-Section</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+          <button class="login-btn">LOG IN</button>
+        </nav>
+      </header>
+      <div class="blur-bg-overlay"></div>
+      <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+          <div class="form-details">
+            <h2>Welcome Back</h2>
+            <p>
+              Please log in using your personal information to stay connected
+              with us.
+            </p>
+          </div>
+          <div class="form-content">
+            <h2>LOGIN</h2>
+            <form action="#">
+              <div class="input-field">
+                <input type="text" required />
+                <label>Email</label>
+              </div>
+              <div class="input-field">
+                <input type="password" required />
+                <label>Password</label>
+              </div>
+              <a href="#" class="forgot-pass-link">Forgot password?</a>
+              <button type="submit">Log In</button>
+            </form>
+            <div class="bottom-link">
+              Don't have an account?
+              <a href="#" id="signup-link">Signup</a>
+            </div>
+          </div>
+        </div>
+        <div class="form-box signup">
+          <div class="form-details">
+            <h2>Create Account</h2>
+            <p>
+              To become a part of our community, please sign up using your
+              personal information.
+            </p>
+          </div>
+          <div class="form-content">
+            <h2>SIGNUP</h2>
+            <form action="#">
+              <div class="input-field">
+                <input type="text" required />
+                <label>Enter your email</label>
+              </div>
+              <div class="input-field">
+                <input type="password" required />
+                <label>Create password</label>
+              </div>
+              <div class="policy-text">
+                <input type="checkbox" id="policy" />
+                <label for="policy">
+                  I agree the
+                  <a href="#" class="option">Terms & Conditions</a>
+                </label>
+              </div>
+              <button type="submit">Sign Up</button>
+            </form>
+            <div class="bottom-link">
+              Already have an account?
+              <a href="#" id="login-link">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="container3">
+        <h2 id="h22">
+          Get complete control of your retail Grocery Store chain with
+          multi-location retail Grocery Shop management software
+        </h2>
+      </div>
+      <div class="container4"></div>
+    </div>
+    <footer>
+      <div id="foo">
+        <div class="footer">
+          <div class="footer-1">
+            <a class="f-1 border2" href="main.html">Back to top</a>
+          </div>
+          <div class="f-2">Connect With Us</div>
+
+          <div class="loogo">
+            <a
+              href="https://www.facebook.com/kushagra.kulkarni.790"
+              target="_blank"
+              ><div class="face border2">
+                <i class="fa-brands fa-facebook"></i></div
+            ></a>
+            <a
+              href="https://www.instagram.com/rajesh_narwade_2004?igsh=MXFxNnZ3cWFvMTNqdw=="
+              target="_blank"
+              ><div class="insta border2">
+                <i class="fa-brands fa-instagram"></i></div
+            ></a>
+            <a href="http://t.me/Rajesh19904" target="_blank"
+              ><div class="tel border2">
+                <i class="fa-brands fa-telegram"></i></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
